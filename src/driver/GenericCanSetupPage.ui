@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GenericCanSetupPage</class>
+ <widget class="QWidget" name="GenericCanSetupPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>795</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <kerning>false</kerning>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>66</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Driver:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="laDriver">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>9</y>
+     <width>610</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>28</y>
+     <width>82</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Interface:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="laInterface">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>28</y>
+     <width>610</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>47</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Interface Details:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="laInterfaceDetails">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>47</y>
+     <width>610</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Bitrate:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbBitrate">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>110</y>
+     <width>170</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>136</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Sample Point:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbSamplePoint">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>136</y>
+     <width>170</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>200</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Data Bitrate:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbBitrateFD">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>200</y>
+     <width>170</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>226</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Data Sample Point:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbSamplePointFD">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>226</y>
+     <width>170</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>260</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Options:</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>260</y>
+     <width>401</width>
+     <height>248</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="vbOptions">
+    <item>
+     <widget class="QCheckBox" name="cbConfigOS">
+      <property name="text">
+       <string>Configured by OS</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cbListenOnly">
+      <property name="text">
+       <string>Bus Monitoring Mode (Listen Only)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cbOneShot">
+      <property name="text">
+       <string>One-Shot Mode</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cbTripleSampling">
+      <property name="text">
+       <string>Triple Sampling</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cbAutoRestart">
+      <property name="text">
+       <string>Auto-Restart on Bus-Off Condition</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cbCustomBitrate">
+      <property name="text">
+       <string>Custom Bitrate + Sample Point</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cbCustomFdBitrate">
+      <property name="text">
+       <string>Custom CAN FD Data Bitrate + Sample Point</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="CustomBitrateSet">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>136</y>
+     <width>72</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string>HHHHHH</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="maxLength">
+    <number>6</number>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="cursorPosition">
+    <number>6</number>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+   <property name="cursorMoveStyle">
+    <enum>Qt::LogicalMoveStyle</enum>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>110</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Div+Seg1+Seg2 (Hex)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>200</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Div+Seg1+Seg2 (Hex)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="CustomFdBitrateSet">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>226</y>
+     <width>72</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string>HHHHHH</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="maxLength">
+    <number>6</number>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="cursorPosition">
+    <number>6</number>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+   <property name="cursorMoveStyle">
+    <enum>Qt::LogicalMoveStyle</enum>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>178</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <underline>true</underline>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>CAN FD Data Phase Setting</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>86</y>
+     <width>391</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+     <underline>true</underline>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>CAN Setting / CAN FD Arbitration Phase Setting</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>551</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>551</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
