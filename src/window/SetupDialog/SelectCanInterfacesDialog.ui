@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../../cangaroo.qrc">
-    <normaloff>:/assets/cangaroo.png</normaloff>:/assets/cangaroo.png</iconset>
+    <normaloff>:/assets/cangaroo.svg</normaloff>:/assets/cangaroo.svg</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -107,7 +107,7 @@
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <property name="standardTools">
+     <property name="standardButtons">
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
      </property>
     </widget>

@@ -104,7 +104,7 @@ MainWindow::MainWindow(QWidget *parent) :
     versionLabel->setStyleSheet("padding-right: 15px; font-weight: bold; font-size: 11px;");
     statusBar()->addPermanentWidget(versionLabel);
 
-    QIcon icon(":/assets/cangaroo.png");
+    QIcon icon(":/assets/cangaroo.svg");
     setWindowIcon(icon);
 
     connect(ui->action_Trace_View, SIGNAL(triggered()), this, SLOT(createTraceWindow()));

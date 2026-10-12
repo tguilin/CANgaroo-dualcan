@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>assets/mdibg.png</file>
-        <file>assets/cangaroo.png</file>
+        <file>assets/mdibg.svg</file>
         <file>assets/cangaroo.svg</file>
         <file>translations/cangaroo_de_DE.qm</file>
         <file>translations/i18n_en_us.qm</file>

@@ -22,7 +22,8 @@ TRANSLATIONS = \
     translations/cangaroo_de_DE.ts \
     translations/i18n_en_us.ts \
     translations/i18n_zh_cn.ts
-RC_ICONS = cangaroo.ico
+# cangaroo.ico not present in repo; window icon is loaded from .qrc SVG at runtime
+# RC_ICONS = cangaroo.ico
 
 DESTDIR = ../bin
 MOC_DIR = ../build/moc
@@ -72,8 +73,12 @@ unix:INCLUDEPATH += /usr/include/libnl3
 PY_CMD = python3
 win32 {
     PY_CMD = python
-    CONFIG += link_pkgconfig
-    PKGCONFIG += python3-embed
+    # Windows has no pkg-config/python3-embed.pc; link the Python embedding lib directly.
+    # Use the versioned lib (e.g. python315.lib) since pybind11 needs the full CPython API,
+    # not the limited/stable-ABI symbols exposed by python3.lib.
+    PY_LIB_DIR = $$system($$PY_CMD -c \"import sys;print(sys.prefix)\")/libs
+    PY_VER = $$system($$PY_CMD -c \"import sys;print(str(sys.version_info.major)+str(sys.version_info.minor))\")
+    LIBS += -L$$PY_LIB_DIR -lpython$$PY_VER
 }
 
 PYBIND_INCLUDES = $$system($$PY_CMD -m pybind11 --includes)
